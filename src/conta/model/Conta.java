@@ -11,14 +11,16 @@ public class Conta {
 	private float saldo;
 	private boolean status;
 	
-	public Conta(String numero, String agencia, String nomeDoTiular, Tipo tipo, float saldo, boolean status) {
-		super();
+	public Conta() {
+		
+	}
+	
+	public Conta(String numero, String agencia, String nomeDoTiular, Tipo tipo, float saldo) {
 		this.numero = numero;
 		this.agencia = agencia;
 		this.nomeDoTiular = nomeDoTiular;
 		this.tipo = tipo;
 		this.saldo = saldo;
-		this.status = status;
 	}
 
 	public String getNumero() {
@@ -57,6 +59,10 @@ public class Conta {
 		return saldo;
 	}
 
+	public void setSaldo(float saldo) {
+		this.saldo = saldo;
+	}
+
 	public boolean getStatus() {
 		return status;
 	}
@@ -82,5 +88,4 @@ public class Conta {
 		System.out.println("Status: " + this.saldo);
 		System.out.println("*************************************************");
 	}
-
 }
