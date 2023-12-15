@@ -2,7 +2,6 @@ package conta;
 
 import java.util.Scanner;
 
-import conta.enumarate.Tipo;
 import conta.model.Conta;
 import conta.util.Cores;
 
@@ -31,73 +30,53 @@ public class Menu {
 		return op;
 		
 	}
+	
+	public static void escolherOpcao() {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		Conta conta = new Conta();
+
+		int opcao;
+		
+		do {
+
+		opcao = exibirMenu(sc);
+		
+		switch(opcao) {
+		
+		case 1:
+			break;
+		case 2:
+			break;
+		case 3:
+			break;
+		case 4:
+			break;
+		case 5:
+			break;
+		case 6:
+			break;
+		case 7:
+			break;
+		case 8:
+			break;
+		case 9:
+			break;
+		default:
+			System.out.println("*********************************************");
+			System.out.println("      Opção Inválida, escolha novamente!     ");
+			System.out.println("*********************************************");
+			break;
+	    }
+			
+		} while(opcao != 0);
+			
+	    sc.close();
+	}
 
 	public static void main(String[] args) {
 		
-	Scanner sc = new Scanner(System.in);
-		
-	Conta conta = new Conta();
-
-	int opcao;
 	
-	do {
-
-	opcao = exibirMenu(sc);
-	
-	switch(opcao) {
-	
-	case 1:
-		System.out.println("*********************************************\n");
-		System.out.println("      ** BANCO GEN - SEJA SEU FUTURO!! **      ");
-		System.out.println("\n*********************************************");
-		System.out.print("Digite o número de conto (com 6 digitos): ");
-		conta.setNumero(sc.nextLine());
-		System.out.println("\n*********************************************");
-		System.out.print("Digite a agência (com 2 dígitos): ");
-		conta.setAgencia(sc.nextLine());
-		System.out.println("\n*********************************************");
-		System.out.print("Digite o nome do titular: ");
-		conta.setNomeDoTiular(sc.nextLine());
-		System.out.println("\n*********************************************");
-		System.out.println("Digite o saldo da conta: ");
-		conta.setSaldo(sc.nextFloat());
-		System.out.println("\n*********************************************");
-		System.out.println("                 TIPO DA CONTA                 ");
-		System.out.println("\n*********************************************");
-		System.out.println("               1 - Conta Corrente              ");
-		System.out.println("               2 - Conta Poupança              ");
-		System.out.println("               3 - Conta Salário               ");
-		System.out.println("               4 - Conta Universitária         ");
-		System.out.println("Digite o tipo da conta: ");
-		
-		
-		//Como pegar o tipoooo???
-		break;
-	case 2:
-		break;
-	case 3:
-		break;
-	case 4:
-		break;
-	case 5:
-		break;
-	case 6:
-		break;
-	case 7:
-		break;
-	case 8:
-		break;
-	case 9:
-		break;
-	default:
-		System.out.println("*********************************************");
-		System.out.println("      Opção Inválida, escolha novamente!     ");
-		System.out.println("*********************************************");
-		break;
-    }
-		
-	} while(opcao != 0);
-		
-    sc.close();
 	}
 }

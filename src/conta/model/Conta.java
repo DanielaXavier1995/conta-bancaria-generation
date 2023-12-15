@@ -1,13 +1,11 @@
 package conta.model;
 
-import conta.enumarate.Tipo;
-
 public class Conta {
 	
 	private String numero;
 	private String agencia;
 	private String nomeDoTiular;
-	private Tipo tipo;
+	private int tipo;
 	private float saldo;
 	private boolean status;
 	
@@ -15,7 +13,7 @@ public class Conta {
 		
 	}
 	
-	public Conta(String numero, String agencia, String nomeDoTiular, Tipo tipo, float saldo) {
+	public Conta(String numero, String agencia, String nomeDoTiular, int tipo, float saldo) {
 		this.numero = numero;
 		this.agencia = agencia;
 		this.nomeDoTiular = nomeDoTiular;
@@ -47,11 +45,11 @@ public class Conta {
 		this.nomeDoTiular = nomeDoTiular;
 	}
 
-	public Tipo getTipo() {
+	public int getTipo() {
 		return tipo;
 	}
 
-	public void setTipo(Tipo tipo) {
+	public void setTipo(int tipo) {
 		this.tipo = tipo;
 	}
 
