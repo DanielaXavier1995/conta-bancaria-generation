@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import conta.util.Cores;
 
-public class Conta {
+public abstract class Conta {
 	
 	private String numero;
 	private String agencia;

@@ -21,8 +21,7 @@ public class Menu {
 		System.out.println("5 - PARA REALIZAR DEPÓSITO                   ");
 		System.out.println("6 - PARA REALIZAR SAQUE                      ");
 		System.out.println("7 - PARA TRANFERÊNCIA ENTRE CONTA            ");
-		System.out.println("8 - PARA FECHAR A CONTA                      ");
-		System.out.println("9 - PARA APAGAR A CONTA                      ");
+		System.out.println("8 - PARA APAGAR A CONTA                      ");
 		System.out.println("0 - PARA SAIR DO SISTEMA                    ");
 		System.out.println("\n*********************************************");
 		System.out.print("Digite a opção desejada:                    ");
@@ -36,8 +35,6 @@ public class Menu {
 	public static void escolherOpcao() {
 		
 		Scanner sc = new Scanner(System.in);
-		
-		Conta conta = new Conta();
 
 		int opcao;
 		
@@ -48,22 +45,28 @@ public class Menu {
 		switch(opcao) {
 		
 		case 1:
+			System.out.println("\n Criar Conta");
 			break;
 		case 2:
+			System.out.println("\n Listar todas as Contas");
 			break;
 		case 3:
+			System.out.println("\n Buscar Conta por número");
 			break;
 		case 4:
+			System.out.println("\n Atualizar dados da Conta");
 			break;
 		case 5:
+			System.out.println("\n Depositar");
 			break;
 		case 6:
+			System.out.println("\n Sacar");
 			break;
 		case 7:
+			System.out.println("\n Transferir");
 			break;
 		case 8:
-			break;
-		case 9:
+			System.out.println("\n Apagar Conta");
 			break;
 		default:
 			System.out.println("*********************************************");
@@ -80,14 +83,6 @@ public class Menu {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		
-//		Conta c = new Conta ("123456", "01", "Dani", 1, 1000.0f);
-//		c.vizualizarInformaçõesDaConta(sc);
-//		c.sacar(500.0f);
-//		c.vizualizarInformaçõesDaConta(sc);
-//		c.depositar(1000.f);
-//		c.vizualizarInformaçõesDaConta(sc);
-		
 		
 //		ContaCorrente cc = new ContaCorrente("123456", "01", "Dani", 1, 1000.0f , 5000.0f);
 //		cc.vizualizarInformaçõesDaConta(sc);
