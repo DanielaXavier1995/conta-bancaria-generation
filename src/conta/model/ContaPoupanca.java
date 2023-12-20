@@ -8,8 +8,8 @@ public class ContaPoupanca extends Conta {
 
 	private int aniversario;
 
-	public ContaPoupanca(String numero, String agencia, String nomeDoTiular, int tipo, float saldo, int aniversario) {
-		super(numero, agencia, nomeDoTiular, tipo, saldo);
+	public ContaPoupanca(int numero, int agencia, int tipo, String nomeDoTitular, float saldo, int aniversario) {
+		super(numero, agencia, tipo, nomeDoTitular, saldo);
 		this.aniversario = aniversario;
 	}
 
@@ -22,12 +22,10 @@ public class ContaPoupanca extends Conta {
 	}
 
 	@Override
-	public void vizualizarInformaçõesDaConta(Scanner sc) {
-		super.vizualizarInformaçõesDaConta(sc);
+	public void vizualizarInformaçõesDaConta() {
+		super.vizualizarInformaçõesDaConta();
 		System.out.println("Aniversário: " + this.aniversario + "           ");
 		System.out.println("*************************************************" + Cores.TEXT_RESET);
 	}
 	
-	
-
 }

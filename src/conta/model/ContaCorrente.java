@@ -7,9 +7,10 @@ import conta.util.Cores;
 public class ContaCorrente extends Conta {
 
 	private float limite;
-
-	public ContaCorrente(String numero, String agencia, String nomeDoTiular, int tipo, float saldo, float limite) {
-		super(numero, agencia, nomeDoTiular,tipo, saldo);
+	
+	
+	public ContaCorrente(int numero, int agencia, int tipo, String nomeDoTitular, float saldo, float limite) {
+		super(numero, agencia, tipo, nomeDoTitular, saldo);
 		this.limite = limite;
 	}
 
@@ -20,8 +21,6 @@ public class ContaCorrente extends Conta {
 	public void setLimite(float limite) {
 		this.limite = limite;
 	}
-	
-	
 
 	@Override
 	public boolean sacar(float valor) {
@@ -36,9 +35,9 @@ public class ContaCorrente extends Conta {
 	}
 
 	@Override
-	public void vizualizarInformaçõesDaConta(Scanner sc) {
-		super.vizualizarInformaçõesDaConta(sc); 
-		System.out.println("Limite: " + this.limite + "           ");
+	public void vizualizarInformaçõesDaConta() {
+		super.vizualizarInformaçõesDaConta(); 
+		System.out.println("Limite: " + this.limite + "                      ");
 		System.out.println("*************************************************" + Cores.TEXT_RESET);
 	}
 	
