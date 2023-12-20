@@ -2,6 +2,8 @@ package conta.model;
 
 import java.util.Scanner;
 
+import conta.util.Cores;
+
 public class ContaCorrente extends Conta {
 
 	private float limite;
@@ -36,8 +38,8 @@ public class ContaCorrente extends Conta {
 	@Override
 	public void vizualizarInformaçõesDaConta(Scanner sc) {
 		super.vizualizarInformaçõesDaConta(sc); 
-		System.out.println("Limite: " + this.limite);
-		System.out.println("*************************************************");
+		System.out.println("Limite: " + this.limite + "           ");
+		System.out.println("*************************************************" + Cores.TEXT_RESET);
 	}
 	
 	

@@ -11,7 +11,7 @@ public abstract class Conta {
 	private String nomeDoTiular;
 	private int tipo;
 	private float saldo;
-	private boolean status;
+
 	
 	public Conta() {
 		
@@ -65,14 +65,6 @@ public abstract class Conta {
 		this.saldo = saldo;
 	}
 
-	public boolean getStatus() {
-		return status;
-	}
-
-	public void setStatus(boolean status) {
-		this.status = false;
-	}
-	
 	public boolean sacar(float valor) {
 		
 		if(valor > getSaldo()) {
@@ -115,18 +107,16 @@ public abstract class Conta {
 		System.out.println(Cores.TEXT_PURPLE + Cores.ANSI_WHITE_BACKGROUND + "*************************************************");
 		System.out.println("               INFORMAÇÕES DA CONTA              ");
 		System.out.println("*************************************************");
-		System.out.println("Número: " + this.numero                           );
+		System.out.println("Número: " + this.numero + "                      ");
 		System.out.println("*************************************************");
-		System.out.println("Agencia: " + this.agencia                         );
+		System.out.println("Agencia: " + this.agencia + "                    ");
 		System.out.println("*************************************************");
-		System.out.println("Nome do Titular: " + this.nomeDoTiular            );
+		System.out.println("Nome do Titular: " + this.nomeDoTiular + "       ");
 		System.out.println("*************************************************");
-		System.out.println("Tipo: " + tipo                                    );
+		System.out.println("Tipo: " + tipo + "                               ");
 		System.out.println("*************************************************");
-		System.out.println("Status: " + this.status                           );
+		System.out.println("Status: " + this.saldo + "                       ");
 		System.out.println("*************************************************");
-		System.out.println("Status: " + this.saldo                            );
-		System.out.println("*************************************************" + Cores.TEXT_RESET);
 	}
 	
 }

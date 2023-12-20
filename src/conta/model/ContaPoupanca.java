@@ -2,6 +2,8 @@ package conta.model;
 
 import java.util.Scanner;
 
+import conta.util.Cores;
+
 public class ContaPoupanca extends Conta {
 
 	private int aniversario;
@@ -22,8 +24,8 @@ public class ContaPoupanca extends Conta {
 	@Override
 	public void vizualizarInformaçõesDaConta(Scanner sc) {
 		super.vizualizarInformaçõesDaConta(sc);
-		System.out.println("Aniversário: " + this.aniversario);
-		System.out.println("*************************************************");
+		System.out.println("Aniversário: " + this.aniversario + "           ");
+		System.out.println("*************************************************" + Cores.TEXT_RESET);
 	}
 	
 	
